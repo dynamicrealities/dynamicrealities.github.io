@@ -268,32 +268,17 @@
                             </div>
                             <button class="btn btn-success" type="submit" id="form-submit-btn" onclick="ContactFormToggle()">Submit</button>
                             <script>
-                                var subject = $('#contactform').find('subject').html();
-                                var name = $('#contactform').find('name').html();
-                                var email = $('#contactform').find('email').html();
-                                var description = $('#contactform').find('description').html();
-
-                                var message = '<h1>' + subject +  '</h1><br><br>' +
-                                    '<ul>'+
-                                        '<li>'+
-                                                'Name: ' + name +
-                                        '</li>' +
-                                        '<li>' +
-                                                'Email: ' + email +
-                                        '</li>' +
-                                        '<li>'+
-                                                'Description: ' + description +
-                                        '</li>' +
-                                    '</ul>';
+                                var message = "";
                                 $("#form-submit-btn").on("click", function() {
-                                $.ajax({
-                                    url: "//formspree.io/dynamicrealities@gmail.com",
-                                    method: "POST",
-                                    data: {message: message},
-                                    dataType: "json"
-                                });
-                                alert('Thanks for the email, we\'ll be in touch soon™!');
-                                return false;
+                                    message = $("#contactform").serialize();
+                                    $.ajax({
+                                        url: "//formspree.io/dynamicrealities@gmail.com",
+                                        method: "POST",
+                                        data: {message: message},
+                                        dataType: "json"
+                                    });
+                                    alert('Thanks for the email, we\'ll be in touch soon™!');
+                                    return false;
                             });
                             </script>
                         </form>
