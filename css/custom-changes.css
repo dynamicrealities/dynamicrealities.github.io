@@ -76,3 +76,11 @@ div.c-wrapper{
 
 .carousel-control.left {margin-left: -105px; color: white;}
 .carousel-control.right {margin-right: -75px; color: white;}
+
+input:required:invalid, input:focus:invalid {
+    border-color: red;
+}
+
+input:required:valid {
+    border-color: green;
+}
