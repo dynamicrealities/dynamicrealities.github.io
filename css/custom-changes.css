@@ -13,6 +13,10 @@ h1, h3 {
     text-align: center;
 }
 
+a {
+    color: #fa743e;
+}
+
 .jumbotron {
     color: #fa743e;
     background-color: rgba(0,0,0,0.5);

@@ -246,8 +246,7 @@
                             information to a 3rd party.</p>
                         <p>As we are using <a target="_blank" href="http://formspree.io">FormSpree</a> for this form
                         please consult their privacy policy for any questions regarding this matter.</p>
-                        <form action="http://formspree.io/dynamicrealities@gmail.com"
-                              method="POST">
+                        <form id="contactform" method="POST">
                             <div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-addon">Name</span>
@@ -265,7 +264,12 @@
                                     <span class="input-group-addon">Description</span>
                                     <textarea name="form-description-input" name="description" class="form-control" rows="4" cols="60" required></textarea>
                                 </div>
+                                <input type="text" name="_gotcha" style="display:none" />
                             </div>
+                            <script>
+                                var contactform =  document.getElementById('contactform');
+                                contactform.setAttribute('action', '//formspree.io/' + 'dynamicrealities@gmail.com');
+                            </script>
                             <input class="btn btn-success" data-dismiss="modal" type="submit" id="form-submit-btn" value="Submit">
                             <input type="hidden" name="_next" value="http://www.dynamicrealities.net" onclick="FormSentConfirmation()"/>
                         </form>
