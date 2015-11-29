@@ -20,7 +20,7 @@ function SubmitContactForm() {
         data: {message: message},
         dataType: "json"
     });
-    alert('Thanks for the email, we\'ll be in touch soon!\n' + message);
+    alert('Thanks for the email, we\'ll be in touch soon!');
     ContactFormToggle();
     return false;
 }
