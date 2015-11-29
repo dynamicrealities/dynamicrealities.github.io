@@ -1,3 +1,8 @@
-function FormSentConfirmation() {
-    alert('Thanks for the email, we\'ll be in touch promptly.');
+function ContactFormToggle() {
+    $('#contact').modal('toggle');
+    ResetContactForm();
+}
+
+function ResetContactForm() {
+    document.getElementById("contactform").reset();
 }

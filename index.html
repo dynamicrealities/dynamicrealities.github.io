@@ -265,24 +265,24 @@
                                     <textarea name="form-description-input" name="description" class="form-control" rows="4" cols="60" required></textarea>
                                 </div>
                                 <input type="text" name="_gotcha" style="display:none" />
-                                <input class="btn btn-success" data-dismiss="modal" type="submit" id="form-submit-btn" value="Submit">
                             </div>
+                            <button class="btn btn-success" type="submit" id="form-submit-btn" onclick="ContactFormToggle()">Submit</button>
                             <script>
-                                $("#contactform").on("click", function() {
+                                $("#form-submit-btn").on("click", function() {
                                 $.ajax({
                                     url: "//formspree.io/dynamicrealities@gmail.com",
                                     method: "POST",
                                     data: {message: "hello!"},
                                     dataType: "json"
                                 });
-                                alert('Thanks for the email, we\'ll be in touch promptly.');
+                                alert('Thanks for the email, we\'ll be in touch soon™!');
                                 return false;
                             });
                             </script>
                         </form>
                     </div>
                     <div class="modal-footer" style="background-color: #333333">
-                        <button class="btn btn-danger btn-bg" data-dismiss="modal" type="button" id="form-dismiss-btn" onclick="">Close</button>
+                        <button class="btn btn-danger btn-bg" data-dismiss="modal" type="button" id="form-dismiss-btn" onclick="ResetContactForm()">Close</button>
                     </div>
                 </div>
             </div>
