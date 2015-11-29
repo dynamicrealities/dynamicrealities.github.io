@@ -265,13 +265,13 @@
                                     <textarea name="form-description-input" name="description" class="form-control" rows="4" cols="60" required></textarea>
                                 </div>
                                 <input type="text" name="_gotcha" style="display:none" />
+                                <input class="btn btn-success" data-dismiss="modal" type="submit" id="form-submit-btn" value="Submit">
+                                <input type="hidden" name="_next" value="http://www.dynamicrealities.net" onclick="FormSentConfirmation()"/>
                             </div>
                             <script>
                                 var contactform =  document.getElementById('contactform');
                                 contactform.setAttribute('action', '//formspree.io/' + 'dynamicrealities@gmail.com');
                             </script>
-                            <input class="btn btn-success" data-dismiss="modal" type="submit" id="form-submit-btn" value="Submit">
-                            <input type="hidden" name="_next" value="http://www.dynamicrealities.net" onclick="FormSentConfirmation()"/>
                         </form>
                     </div>
                     <div class="modal-footer" style="background-color: #333333">
