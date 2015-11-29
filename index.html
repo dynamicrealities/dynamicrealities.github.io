@@ -31,10 +31,10 @@
                             <ul class="nav navbar-nav navbar-left">
                                 <li>
                                     <a href="index.html">
-                                                <span>
-                                                    <img alt="Dynamic Realities" width="42" height="42"
-                                                         src="img/Cogfire-notext.png">
-                                                </span>
+                                        <span>
+                                            <img alt="Dynamic Realities" width="42" height="42"
+                                                 src="img/Cogfire-notext.png">
+                                        </span>
                                     </a>
                                 </li>
                                 <li>
@@ -266,11 +266,18 @@
                                 </div>
                                 <input type="text" name="_gotcha" style="display:none" />
                                 <input class="btn btn-success" data-dismiss="modal" type="submit" id="form-submit-btn" value="Submit">
-                                <input type="hidden" name="_next" value="http://www.dynamicrealities.net" onclick="FormSentConfirmation()"/>
                             </div>
                             <script>
-                                var contactform =  document.getElementById('contactform');
-                                contactform.setAttribute('action', '//formspree.io/' + 'dynamicrealities@gmail.com');
+                                $("#contactform").on("click", function() {
+                                $.ajax({
+                                    url: "//formspree.io/dynamicrealities@gmail.com",
+                                    method: "POST",
+                                    data: {message: "hello!"},
+                                    dataType: "json"
+                                });
+                                alert('Thanks for the email, we\'ll be in touch promptly.');
+                                return false;
+                            });
                             </script>
                         </form>
                     </div>
