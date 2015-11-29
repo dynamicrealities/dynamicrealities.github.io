@@ -1,32 +1,283 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Coming Soon</title>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link href="tools/style.css" rel="stylesheet" type="text/css" />
-<link href="tools/960.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> 
-<script type="text/javascript" src="js/cufon-yui.js"></script>
-<script type="text/javascript" src="js/Adobe_Caslon_Pro_600.font.js"></script>
-<script type="text/javascript">
-	Cufon.replace('h1', {fontFamily: 'Adobe Caslon Pro', hover:true})
-</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FTC</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/custom-changes.css"/>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/content-controller.js"></script>
 </head>
-<body>
-<div class="container_12" id="content">
-	<h1>Flying! Thunder! Chase!</h1>
-	<h3>Our website isn’t quite ready, but you can still...</h3>
-	<div class="main">
-		<div class="mcontent">
-			<div class="box2">
-				<h2>Follow us</h2>
-				<a target="_blank" href="http://www.twitter.com/DynRealities"><img src="images/t.png" alt="Dynamic Realities' Twitter"/></a>
-				<a target="_blank" href="http://www.facebook.com/DynamicRealities"><img src="images/f.png" alt="Dynamic Realities' Facebook"/></a>
-				<a target="_blank" href="http://www.youtube.com/DynamicRealities"><img src="images/yt.png" alt="Dynamic Realities' YouTube Channel"/></a>
-			</div>
-		</div>
-	</div>
-</div>
-</body>
+    <body>
+        <div class="header">
+            <div class="well" style="height: 100%">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target=".navHeaderCollapse"
+                                    aria-expanded="false"><span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse navHeaderCollapse">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li>
+                                    <a href="index.html">
+                                                <span>
+                                                    <img alt="Dynamic Realities" width="42" height="42"
+                                                         src="img/Cogfire-notext.png">
+                                                </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#privacy" data-toggle="modal" data-target="#privacy">
+                                        <span class="fa fa-lock" style="font-size: 42px"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#contact" data-toggle="modal" data-target="#contact">
+                                        <span class="fa fa-envelope-o" style="color: black; font-size: 38px"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-center">
+                                <li>
+                                    <a target="_blank" href="#">
+                                        <span class="fa fa-android" style="color: #5cb85c; font-size: 42px;"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="#">
+                                        <span class="fa fa-apple" style="color: #c0c0c0; font-size: 42px;"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a target="_blank" href="http://www.twitter.com/DynRealities">
+                                        <span class="fa fa-twitter-square" style="color: #31b0d5; font-size: 42px;"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://www.facebook.com/DynamicRealities">
+                                        <span class="fa fa-facebook-square" style="color: #204d74; font-size: 42px;"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://www.youtube.com/DynamicRealities">
+                                        <span class="fa fa-youtube-square" style="color: #c12e2a; font-size: 42px;"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="http://flyingthunderchase.tumblr.com">
+                                        <span class="fa fa-tumblr-square" style="color: #204d74; font-size: 42px;"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="body-content">
+            <div class="jumbotron">
+                <h1>Website Will Be Up Soon!</h1>
+
+                <p>In the meantime please check out our social outlets found in the top menu and a few YouTube Videos
+                    found below!</p>
+            </div>
+            <div class="c-wrapper">
+                <div id="carousel-generic" class="carousel slide" data-interval="false">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-generic" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox" style="align-content: center;">
+                        <div class="item active">
+                            <iframe width="900" height="500"
+                                    src="https://www.youtube.com/embed/nYP2iutZ6lQ?list=PLo20IdOdVuplVLBKfdkTR2rfC-UtbCTiw"
+                                    frameborder="0" allowfullscreen></iframe>
+                            <div class="carousel-caption">
+                                #15 - Flying! Thunder! Chase! - Fuel Cannister Improvement
+                            </div>
+                        </div>
+                        <div class="item">
+                            <iframe width="900" height="500"
+                                    src="https://www.youtube.com/embed/PoudtgxqDTE?list=PLo20IdOdVuplVLBKfdkTR2rfC-UtbCTiw"
+                                    frameborder="0" allowfullscreen></iframe>
+                            <div class="carousel-caption">
+                                #14 - Flying! Thunder! Chase! - Warp Jump!
+                            </div>
+                        </div>
+                        <div class="item">
+                            <iframe width="900" height="500"
+                                    src="https://www.youtube.com/embed/JC3eSDutONI?list=PLo20IdOdVuplVLBKfdkTR2rfC-UtbCTiw"
+                                    frameborder="0" allowfullscreen></iframe>
+                            <div class="carousel-caption">
+                                #13 - Flying! Thunder! Chase! - Menu Animations
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="font-size: 62px"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="font-size: 62px"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+        <div id="privacy" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg modal-md modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: #333333">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title">Privacy Policy</h1>
+                    </div>
+                    <div class=modal-body id="privacy-body" style="background-color: #454545">
+                        <p>At Dynamic Realities we take the privacy of our users seriously.
+                            In this Privacy Policy you can find out more about how we collect, use, and
+                            disclose “Personal” or “Non-Personal” Information about you.</p>
+
+                        <h3>Personal Information and Why We Collect It from You</h3>
+
+                        <p>
+                            Any information we collect that identifies you as an individual is considered “Personal”
+                            Information. When registering for our product we collect and store your email, as well
+                            as any optional Personal Information you choose to share with us. By registering you also
+                            have the opportunity to opt-in to email correspondence sent to you from Dynamic Realities.
+                            Copies of any correspondence you send to Dynamic Realities may be kept for our records.
+                            Your email is collected only for product registration purposes and/or to keep you
+                            up-to-date on new products and changes to existing products.
+                        </p>
+
+                        <h3>Company Correspondence</h3>
+
+                        <p>
+                            Dynamic Realities may, from time to time, send out email communications to registered
+                            users about our company or products. Users must opt-in to this service in order to
+                            receive these communications. Users may also opt-out of receiving any future
+                            communications from Dynamic Realities at any time by unsubscribing to our mailing list.
+                        </p>
+
+                        <h3>Disclosure of Personal Information</h3>
+
+                        <p>
+                            Any Personal Information shared with us will not be disclosed under any circumstances
+                            (e.g. the sale, trading, or sharing of Personal Information with third parties)
+                            without the user’s consent or an applicable warrant issued by law enforcement.
+                        </p>
+
+                        <h3>Security of Personal Information</h3>
+
+                        <p>
+                            We will make every effort to ensure that any Personal Information shared with us is
+                            securely stored offsite in a manner that reasonably ensures its protection against
+                            misuse, loss, unauthorized access, disclosure, or modification. Authorized third
+                            party websites that link to our products are not covered under our Privacy Policy
+                            and users must access such sites at their own risk.
+                        </p>
+
+                        <h3>Accessing Your Personal Information</h3>
+
+                        <p>
+                            You may access or delete any Personal Information shared with Dynamic Realities via
+                            your registered profile with our company. You may also submit a request to us in writing
+                            to verify, amend, or remove any Personal Information that has been shared with us.
+                        </p>
+
+                        <h3>Collection of Other “Non-Personal” Information</h3>
+
+                        <p>
+                            At this time, Dynamic Realities does not use cookies to track users. Our websites and
+                            apps may contain APIs from third parties covered by their own privacy policies.
+                        </p>
+
+                        <h3>Updates to Our Privacy Policy</h3>
+
+                        <p>
+                            Dynamic Realities may, from time to time, make changes to this Privacy Policy.
+                            Any changes to the policy can be viewed at: http://www.dynamicrealities.net#privacy.
+                            Users who have opted-in to receive email communications from Dynamic Realities will
+                            be automatically notified of any changes to our Privacy Policy.
+                        </p>
+
+                        <h3>Complaints</h3>
+
+                        <p>Please forward any complaints you have regarding our Privacy Policy to the contact
+                            email address below.
+                        </p>
+
+                        <h3>Contact Information</h3>
+
+                        <p>
+                            If you have any questions about our Privacy Policy, please contact us at: dynamicrealities@gmail.com
+                        </p>
+                    </div>
+                    <div class="modal-footer" style="background-color: #333333">
+                        <p>Privacy Policy last updated 24/11/2015</p>
+                        <button type="button" class="btn btn-danger btn-bg" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: #333333">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title">Contact / Feedback</h1>
+                    </div>
+                    <div class=modal-body style="background-color: #454545">
+                        <p>Please use the form below to contact us regarding feedback or any questions you may have!
+                            We will never use the information given below to spam you and we will never pass on your
+                            information to a 3rd party.</p>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">Name</span>
+                                <input name="form-name-input" type="text" class="form-control" required>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon">Email</span>
+                                <input name="form-email-input" type="email" class="form-control" required>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon">Category</span>
+                                <select name="form-dropdown-input" class="form-control dropdown">
+                                    <option value="f_game">FTC Feedback</option>
+                                    <option value="f_website">Website Feedback</option>
+                                    <option value="g_inquiry">General Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon">Subject</span>
+                                <input name="form-subject-input" type="text" class="form-control" required>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon">Description</span>
+                                <textarea name="form-description-input" class="form-control" rows="4" cols="60" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="background-color: #333333">
+                        <button type="button" class="btn btn-success btn-bg" data-dismiss="modal" onclick="">Submit</button>
+                        <button type="button" class="btn btn-danger btn-bg" data-dismiss="modal" onclick="">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

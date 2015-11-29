@@ -1,0 +1,74 @@
+body {
+    background-color: #333333;
+    background: url("../img/Promo1.jpg") no-repeat scroll;
+}
+
+p {
+    color: white;
+}
+
+h1, h3 {
+    color: #fa743e;
+    background-color: transparent;
+    text-align: center;
+}
+
+.jumbotron {
+    color: #fa743e;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.body-content {
+    padding-top: 15px;
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+    span.text {
+        padding-top: 75px;
+        text-align: center;
+        display: block;
+    }
+    .navbar-center {
+        padding-left: 55px;
+    }
+}
+
+.modal-body#privacy-body {
+    min-height: 150px;
+    min-width: 150px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.input-group-addon {
+    min-width: 100px;
+}
+
+div.c-wrapper{
+    width: 45%; /* for example */
+    margin: auto;
+}
+
+.carousel-inner > .item > iframe,
+.carousel-inner > .item > a > iframe{
+    width: 100%; /* use this, or not */
+    margin: auto;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background: none;
+    color: red;
+    border: none;
+}
+
+.carousel-control.left {margin-left: -105px; color: white;}
+.carousel-control.right {margin-right: -75px; color: white;}
