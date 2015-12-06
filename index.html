@@ -57,12 +57,12 @@
                         </ul>
                         <ul class="nav navbar-nav navbar-center">
                             <li>
-                                <a target="_blank" href="#">
+                                <a target="_blank" href="#" data-toggle="modal" data-target="#coming-soon">
                                     <span class="fa fa-android" style="color: #5cb85c; font-size: 42px;"></span>
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="#">
+                                <a target="_blank" href="#" data-toggle="modal" data-target="#coming-soon">
                                     <span class="fa fa-apple" style="color: #c0c0c0; font-size: 42px;"></span>
                                 </a>
                             </li>
@@ -113,10 +113,14 @@
             <div class="row" id="jumbotron-paragraph-content" style="padding-top: 10px;">
                 <div class="col-sm-6">
                     <button class="btn btn-default" type="button"
+                            data-toggle="modal" data-target="#coming-soon"
                             style="
                                 background-image: url('img/Google_App_Store_Badge.png');
                                 background-repeat: no-repeat;
                                 background-size: cover;
+                                background-position: center;
+                                background-color: transparent;
+                                border: transparent;
                                 width: 270px;
                                 height: 80px;
                                 vertical-align: middle;">
@@ -124,11 +128,14 @@
                 </div>
                 <div class="col-sm-6">
                     <button class="btn btn-default" type="button"
+                            data-toggle="modal" data-target="#coming-soon"
                             style="
                                 background-image: url('img/Apple_App_Store_Badge.svg');
                                 background-repeat: no-repeat;
                                 background-size: cover;
                                 background-position: center;
+                                background-color: transparent;
+                                border: transparent;
                                 width: 270px;
                                 height: 80px;
                                 vertical-align: middle;">
@@ -263,7 +270,6 @@
 
                 <p>As we are using <a target="_blank" href="http://formspree.io">FormSpree</a> for this form
                     please consult their privacy policy for any questions regarding this matter.</p>
-
                 <form id="contactform" method="POST">
                     <div class="form-group">
                         <div class="input-group">
@@ -294,6 +300,22 @@
                 <button class="btn btn-danger btn-bg" data-dismiss="modal" type="button" id="form-dismiss-btn"
                         onclick="ResetContactForm()">Close
                 </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="coming-soon" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #333333">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h1 class="modal-title">Information</h1>
+            </div>
+            <div class=modal-body style="background-color: #454545">
+                <p><h1 style="color: white;">Coming Soon!</h1></p>
+            </div>
+            <div class="modal-footer" style="background-color: #333333">
+                <button class="btn btn-danger btn-bg" data-dismiss="modal" type="button">Close</button>
             </div>
         </div>
     </div>
