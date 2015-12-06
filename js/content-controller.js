@@ -33,3 +33,7 @@ function ContactFormToggle() {
 function ResetContactForm() {
     document.getElementById("contactform").reset();
 }
+
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+});

@@ -1,6 +1,37 @@
+@font-face { font-family: Kenvector; src: url('../css/kenvector_future_thin.ttf'); }
+
 body {
     background-color: #333333;
-    background: url("../img/Promo1.jpg") no-repeat scroll;
+    background-size: cover;
+}
+
+.background-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    display: block;
+    background-image: url('../img/Promo1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1920px;
+    height: 1080px;
+
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.content {
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 p {
@@ -18,13 +49,21 @@ a {
 }
 
 .jumbotron {
-    color: #fa743e;
-    background-color: rgba(0,0,0,0.5);
+    background-color: transparent;
     text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.body-content {
-    padding-top: 15px;
+.jumbotron h1 {
+    color: #fff;
+    font-family: Kenvector;
+}
+
+#jumbotron-paragraph-content {
+    border: solid 3px rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 760px;
+    margin: 10px auto;
 }
 
 @media (min-width: 768px) {
