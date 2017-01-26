@@ -12,7 +12,7 @@ body {
     z-index: 1;
 
     display: block;
-    background-image: url('../img/Promo1.jpg');
+    //background-image: url('../img/Promo2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 1920px;
@@ -81,7 +81,7 @@ a {
         display: block;
     }
     .navbar-center {
-        padding-left: 55px;
+        padding-right: 10px;
     }
 }
 
