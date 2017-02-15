@@ -1,4 +1,5 @@
-@font-face { font-family: Kenvector; src: url('../css/kenvector_future_thin.ttf'); }
+/*@font-face { font-family: Kenvector; src: url('../css/kenvector_future_thin.ttf'); }*/
+@font-face { font-family: Digitalt; src: url('../css/Digitalt.ttf'); }
 
 body {
     background-color: #333333;
@@ -57,14 +58,15 @@ a {
 
 .jumbotron h1 {
     color: #fff;
-    font-family: Kenvector;
+    font-family: Digitalt;
 }
 
 #jumbotron-paragraph-content {
-    border: solid 3px rgba(255, 255, 255, 1);
-    background-color: rgba(0, 0, 0, 0.4);
+    border: solid 10px rgba(254, 152, 3, 1);
+    background-color: rgba(250, 242, 235, 1);
     width: 760px;
     margin: 10px auto;
+	font-family: Digitalt;
 }
 
 @media (min-width: 768px) {
